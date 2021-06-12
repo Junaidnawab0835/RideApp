@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.BasketFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ff669900"
+            app:title="Basket"
+            android:id="@+id/toolbarBasket"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="70dp"
+        android:background="#FFF">
+
+        <ImageView
+            android:id="@+id/imageB"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ag"/>
+
+        <Button
+            android:id="@+id/basketBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageB"
+            android:layout_marginTop="15dp"
+            android:text="Create Basket"
+            android:textAllCaps="false"
+            android:textColor="#ff99cc00"
+            android:background="@drawable/outline_btn"/>
+
+        <LinearLayout
+            android:layout_marginTop="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/basketText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#aaa"
+                android:text="Your Token Is the Code given below: Share to shop together."
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tokenText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff669900"
+                android:text="No Token Yet"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

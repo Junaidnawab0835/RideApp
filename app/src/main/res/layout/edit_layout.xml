@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="35dp"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textColor="#2E8B57"
+        android:textSize="14dp"
+        android:text="First Name"
+        android:typeface="serif" />
+    <EditText
+        android:id="@+id/edit_firstName"
+        android:typeface="serif"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingBottom="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textColor="#2E8B57"
+        android:textSize="14dp"
+        android:text="Last Name"
+        android:typeface="serif" />
+    <EditText
+        android:id="@+id/edit_lastName"
+        android:typeface="serif"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingBottom="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textColor="#2E8B57"
+        android:textSize="14dp"
+        android:text="Username"
+        android:typeface="serif" />
+    <EditText
+        android:id="@+id/edit_username"
+        android:typeface="serif"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingBottom="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textColor="#2E8B57"
+        android:textSize="14dp"
+        android:text="Email Address"
+        android:typeface="serif" />
+    <EditText
+        android:id="@+id/edit_email"
+        android:typeface="serif"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@drawable/ic_customer"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_motorcycle"
+            android:title="Your trips" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_assistant"
+            android:title="Emegency contacts" />
+    </group>
+    <item android:title="Extra">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power"
+                android:title="LogOut"/>
+        </menu>
+    </item>
+</menu>

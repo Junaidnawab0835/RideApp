@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "131901274396",
+    "firebase_url": "https://grocer-app-12ebd-default-rtdb.firebaseio.com",
+    "project_id": "grocer-app-12ebd",
+    "storage_bucket": "grocer-app-12ebd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131901274396:android:1fca03dbcde179ad0722d9",
+        "android_client_info": {
+          "package_name": "com.example.rideapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131901274396-s94hto1bfgv5ohhc1tdjgudvti6fj6j8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rideapp1",
+            "certificate_hash": "eb5103d9d966c018caf1782c364567054434d2ba"
+          }
+        },
+        {
+          "client_id": "131901274396-a7pgi9ki68kn7t3glfvl026doakslu18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5JjZt0vrxPXvrLytFYEM6bi6GLrvzAhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131901274396-a7pgi9ki68kn7t3glfvl026doakslu18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

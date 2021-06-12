@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Verify"
+    android:padding="12dp">
+
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:id="@+id/codeText"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:cursorVisible="false"
+        app:pinCharacterSpacing="6dp"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textIsSelectable="false"
+        android:textSize="18dp"
+        android:textColor="#181111"
+        app:pinTextBottomPadding="4dp"
+        app:pinLineStroke="2dp"
+        app:pinLineStrokeSelected="1dp"
+        app:pinBackgroundIsSquare="false"
+        app:pinBackgroundDrawable="@drawable/pin_bg"
+        app:pinAnimationType="fromBottom" />
+
+    <Button
+        android:id="@+id/verifyCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="130dp"
+        android:text="Send Code"
+        android:textAllCaps="false"
+        android:background="@drawable/btn"
+        android:textColor="#FFF"
+        android:onClick="verifyCode"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="380dp">
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccpDialog_keyboardAutoPopup="true"
+            app:ccp_defaultPhoneCode="254"
+            app:ccp_showFullName="false"
+            app:ccpDialog_backgroundColor="#FFF"
+            app:ccp_textGravity="CENTER"
+            app:ccp_rememberLastSelection="false"
+            app:ccpDialog_showFlag="true"
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="true"
+            app:ccp_textSize="18dp"
+            app:ccp_autoFormatNumber="false"
+            app:ccp_arrowColor="#FF585858"
+            app:ccp_arrowSize="26dp"/>
+
+        <EditText
+            android:id="@+id/phoneText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Phone"
+            android:typeface="serif"
+            android:textSize="16dp"
+            android:textColorHint="#FF585858"
+            android:textColor="#FF585858"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:background="@drawable/edittext_bg"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/veryPhoneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/btn"
+        android:onClick="verifyPhoneNumber"
+        android:text="Verify Phone Number"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:typeface="serif"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/resendCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/btn"
+        android:onClick="resendCode"
+        android:text="Resend Code"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:typeface="serif"
+        android:textAllCaps="false"/>
+</RelativeLayout>
